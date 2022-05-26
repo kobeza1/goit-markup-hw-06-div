@@ -628,6 +628,22 @@
             </li>
           </ul>
         </div>
+        <div class="footer-mailing">
+          <p class="footer-mailing-text uppercase-title">
+            Подпишитесь на рассылку
+          </p>
+          <div class="footer-form-container">
+            <form class="form-footer" action="">
+              <input type="email" name="mail" placeholder="E-mail" />
+            </form>
+            <button class="modal-btn button" type="submit">
+              Подписаться
+              <svg class="icon-send" width="24" height="24">
+                <use href="./images/icons/sprite.svg#send"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
       </div>
     </footer>
 
@@ -639,6 +655,36 @@
             <use href="./images/icons/sprite.svg#close2"></use>
           </svg>
         </button>
+        <div class="modal-content">
+          <form action="" class="modal-form">
+            <b>Оставьте свои данные, мы вам перезвоним</b>
+            <div class="form-field">
+              <label for="name">Имя</label>
+              <input type="text" name="name" id="name" />
+            </div>
+            <div class="form-field">
+              <label for="tel">Телефон</label>
+              <input type="tel" name="tel" id="tel" />
+            </div>
+            <div class="form-field">
+              <label for="mail">Почта</label>
+              <input type="email" name="mail" id="mail" />
+            </div>
+            <div class="form-field">
+              <label for="comment">Комментарий</label>
+              <textarea
+                name="comment"
+                id="comment"
+                cols="30"
+                rows="10"
+                placeholder="Введите текст"
+              ></textarea>
+            </div>
+            <label for="policy">На все согласен</label>
+            <input type="checkbox" name="policy" id="policy" />
+            <button type="submit">Отправить</button>
+          </form>
+        </div>
       </div>
     </div>
     <script src="./js/modal.js"></script>
